@@ -1,0 +1,34 @@
+{
+  "name": "nlw-agents",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000L\u0000W\u0000-\u0000A\u0000g\u0000e\u0000n\u0000t\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file .env --experimental-strip-types --no-warnings src/server.ts",
+    "dev": "node --env-file .env --experimental-strip-types --no-warnings --watch src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ismaeldan/NLW-Agents.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ismaeldan/NLW-Agents/issues"
+  },
+  "homepage": "https://github.com/ismaeldan/NLW-Agents#readme",
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3",
+    "ultracite": "5.0.32"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "fastify": "^5.4.0",
+    "fastify-type-provider-zod": "^5.0.2",
+    "zod": "^4.0.3"
+  }
+}
