@@ -3,8 +3,40 @@
 
 ###
 #Health Check
+# @name getHealth
 GET {{baseUrl}}/health
 
 ###
 #Get Rooms
+# @name getRooms
 GET {{baseUrl}}/rooms
+
+###
+#Create Rooms
+# @name createRoom
+POST {{baseUrl}}/rooms
+Content-Type: application/json
+
+{
+  "name": "Teste",
+  "description": "Descrição do Teste"
+}
+
+###
+@roomId = {{createRoom.response.body.$.roomId}}
+
+###
+#Get Room Questions
+# @name getRoomQuestions
+GET {{baseUrl}}/rooms/{{roomId}}/questions
+
+
+###
+#Create Questions
+# @name createQuestions
+POST {{baseUrl}}/rooms/{{roomId}}/questions
+Content-Type: application/json
+
+{
+  "question": "Teste"
+}
