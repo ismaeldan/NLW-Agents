@@ -15,6 +15,13 @@
       "when": 1756384526763,
       "tag": "0001_graceful_mulholland_black",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1756848212985,
+      "tag": "0002_mute_apocalypse",
+      "breakpoints": true
     }
   ]
 }
