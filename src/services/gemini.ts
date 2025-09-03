@@ -61,12 +61,12 @@ export async function generateAnswer(
     PERGUNTA: ${question}
 
     INSTRUÇÕES:
-    - Use apenas o contexto fornecido para responder a pergunta.
-    - Se a responta não estiver no contexto, responda "Não sei".
-    - Seja claro e objetivo.
-    - Mantenha um tom educativo e profissional.
-    - Site as referências do contexto se apropriado.
-    - Se for citar o contexto, utilize o termo 'Conteudo da Aula'.
+    - Use apenas informações contidas no contexto enviado;
+    - Se a resposta não for encontrada no contexto, apenas responda que não possui informações suficientes para responder;
+    - Seja objetivo;
+    - Mantenha um tom educativo e profissional;
+    - Cite trechos relevantes do contexto se apropriado;
+    - Se for citar o contexto, utilize o temo "conteúdo da aula";
   `.trim()
 
   const response = await gemini.models.generateContent({
